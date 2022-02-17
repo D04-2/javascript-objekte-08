@@ -1,10 +1,4 @@
-"use strict";
-
-const today = new Date();
-console.log(today);
-const yearOfToday = today.getFullYear();
-console.log(yearOfToday);
-
+"use strick";
 const autoInfo = {
   besitzer: "Herr Müller",
   marke: "BMW",
@@ -12,9 +6,9 @@ const autoInfo = {
   kilometer: 40000,
   farbe: "Dunkelblau",
   baujahr: 2019,
-  altOfAuto: function () {
-    return yearOfToday - this.baujahr;
+  alterDesAuto() {
+    return new Date().getFullYear() - this.baujahr;
   },
 };
-
-console.log(autoInfo.altOfAuto());
+console.log(autoInfo);
+console.log(autoInfo.alterDesAuto());
