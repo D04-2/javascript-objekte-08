@@ -17,10 +17,20 @@ const car = {
   constructionYear: 2019,
   color: "Blau",
   kilometreAge: 40000,
+  currentNettoValue: 38900,
 };
 
 car.getAge = function () {
   return today.getFullYear() - this.constructionYear;
 };
 
+car.getBruttopreis = function () {
+  return this.currentNettoValue * (1.19).toFixed(2);
+};
+
 console.log(`Das Auto von Herrn Müller ist ${car.getAge()} Jahre alt`);
+console.log(
+  `Aktueller Nettowert beträgt: ${
+    car.currentNettoValue
+  } \n der Bruttowert beträgt ${car.getBruttopreis()}!`
+);
