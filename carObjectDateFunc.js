@@ -9,7 +9,7 @@ const muellerCar = {
         return  this.today -this.year;
     }
 }
-console.log(muellerCar.age())
+console.log(muellerCar.age());
 
 
 
